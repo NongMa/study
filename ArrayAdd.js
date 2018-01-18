@@ -1,3 +1,4 @@
+//数组拓展方法
 Array.prototype.random=function(){
     var that=this;
     for(var i=0;i<that.length;i++){
