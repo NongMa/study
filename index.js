@@ -1,1 +1,1 @@
-aaa
+//es6 中promise的用法
