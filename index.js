@@ -1,1 +1,1 @@
-//es6 中promise的用法
+//es6 中promise的用法  sanhu
