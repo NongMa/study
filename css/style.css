@@ -1,0 +1,102 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.main,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.main {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.main .page {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: all 1s;
+	transform: translateY(100%);
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+}
+
+.main .page-bg1 {
+	background: linear-gradient(red, blue);
+	transform: translateY(0);
+}
+
+.main .page-bg2 {
+	background: linear-gradient(blue, red);
+}
+
+.main .page-bg3 {
+	background: linear-gradient(blue, green);
+}
+
+.main .prePage{
+	transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+}
+.main .currentPage{
+	transform: translateY(0);
+	-ms-transform: translateY(0);
+	-webkit-transform: translateY(0);
+}
+.main .nextPage{
+	transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+}
+
+.nav {
+	position: fixed;
+	right: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100px;
+}
+
+@media only screen and (max-width: 640px) {
+	.nav {
+		display: none;
+	}
+}
+
+.nav a {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	margin: 5px 0px;
+	background: #ffffff;
+}
+
+.nav .active {
+	background-color: red;
+}
